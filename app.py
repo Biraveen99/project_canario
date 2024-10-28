@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 def connect_to_db():
     try:
-        conn = mysql.connector.connect(user='root', password='ProBook1', host='localhost', database='canariodb')
+        conn = mysql.connector.connect(user='root', password='*********', host='localhost', database='canariodb')
         return conn
     except mysql.connector.Error as err:
         print(f"Error: {err}")
